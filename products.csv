@@ -1,0 +1,9 @@
+product_id,product_name,category,price
+101,Laptop,Electronics,55000.0
+102,Smartphone,Electronics,30000.0
+103,Headphones,Electronics,2500.0
+104,Office Chair,Furniture,7000.0
+105,Desk,Furniture,12000.0
+106,Backpack,Accessories,1800.0
+107,Keyboard,Electronics,1500.0
+108,Mouse,Electronics,900.0
