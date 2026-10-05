@@ -1,4 +1,4 @@
-readme_content = """
+readme_content = '''
 # Elevate Labs - Task 3: SQL for Data Analysis
 
 ## Project Overview
@@ -65,54 +65,48 @@ The analysis includes:
 - Identifying customers spending above the average
 - Demonstrating INNER, LEFT, and RIGHT JOINs
 - Creating and querying a customer spending view
-- Creating an index on `orders.customer_id`
-- Using `EXPLAIN QUERY PLAN` for query optimization
-
-## Key SQL Techniques
-
-### Aggregation
-
-Used `SUM()`, `AVG()`, and `COUNT()` to analyze sales, products, orders, and customers.
-
-### Joins
-
-Used INNER JOIN, LEFT JOIN, and RIGHT JOIN to combine information from related tables.
-
-### Subquery
-
-Used a subquery to identify customers whose total spending is above the average customer spending.
-
-### View
-
-Created the `customer_spending` view to summarize customer order count and total spending.
-
-### Index
-
-Created an index on `orders.customer_id` to support efficient filtering and joining.
+- Creating an index on orders.customer_id
+- Using EXPLAIN QUERY PLAN for query optimization
 
 ## Project Structure
 
-```text
 elevate-labs-task-3-sql-data-analysis/
-│
-├── README.md
-│
-├── sql/
-│   └── task3_sql_queries.sql
-│
-├── database/
-│   └── ecommerce.db
-│
-└── screenshots/
-    ├── 01_select.png
-    ├── 02_where.png
-    ├── 03_order_by.png
-    ├── 04_group_by_sum.png
-    ├── 05_group_by_avg.png
-    ├── 06_total_revenue.png
-    ├── 07_inner_join.png
-    ├── 08_left_join.png
-    ├── 09_right_join.png
-    ├── 10_subquery.png
-    ├── 11_view.png
-    └── 12_index_optimization.png
+|
+|-- README.md
+|
+|-- sql/
+|   |-- task3_sql_queries.sql
+|
+|-- database/
+|   |-- ecommerce.db
+|
+|-- screenshots/
+    |-- 01_select.png
+    |-- 02_where.png
+    |-- 03_order_by.png
+    |-- 04_group_by_sum.png
+    |-- 05_group_by_avg.png
+    |-- 06_total_revenue.png
+    |-- 07_inner_join.png
+    |-- 08_left_join.png
+    |-- 09_right_join.png
+    |-- 10_subquery.png
+    |-- 11_view.png
+    |-- 12_index_optimization.png
+
+## Deliverables
+
+- SQL query file
+- SQLite database
+- Query output screenshots
+- README documentation
+
+## Conclusion
+
+This task demonstrates practical SQL skills for data analysis, including data retrieval, aggregation, joins, subqueries, views, indexing, and query optimization using an e-commerce database.
+'''
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+print("README.md created successfully!")
